@@ -9,7 +9,7 @@ Final Project PBO : Game BRASAT
 | Credit Page      					    | 			      						   |  |
 | Instruction Page 					    | 			      						   |	  |
 | Main Game Engine 					    | 			      						   |	  |
-| Back sound       					    | 			      						   |		  |
+| Back sound       					    | 			      						   |:white_check_mark:|
 |               					    | 			      						   |	  |
 |               					    | 			      						   |	  |
 |               					    | 			      						   |	  |
