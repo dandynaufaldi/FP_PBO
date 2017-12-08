@@ -5,7 +5,7 @@ Final Project PBO : Game BRASAT
 | ------------------------------------- |:-----------------------------------------|:------------:|
 | Monster Aset| 	 |:white_check_mark:|
 | Fix Button Aset| 	  |:white_check_mark:|
-| Class New Font| 	 |		  |
+| Class New Font|Ambil gambar dari font (0-9)|		  |
 | Credit Page      					    | 			      						   |  |
 | Instruction Page 					    | 			      						   |	  |
 | Main Game Engine 					    | 			      						   |	  |
