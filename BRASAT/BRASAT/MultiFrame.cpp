@@ -1,5 +1,6 @@
 #include "MultiFrame.h"
 #include "MainPanel.h"
+#include "InstructionPanel.h"
 #include "PausePanel.h"
 #include "GamePanel.h"
 #include "HighScorePanel.h"
@@ -18,6 +19,10 @@ void MultiFrame::InitComponents()
 	this->mainPanel = new MainPanel(this);
 	this->mainPanel->Show(false);
 	this->boxSizer->Add(mainPanel, 1, wxEXPAND, 0);
+
+	this->instructionPanel = new InstructionPanel(this);
+	this->instructionPanel->Show(false);
+	this->boxSizer->Add(instructionPanel, 1, wxEXPAND, 0);
 
 	this->gamePanel = new GamePanel(this);
 	this->gamePanel->Show(false);
@@ -45,7 +50,49 @@ void MultiFrame::ShowMainPanel()
 	this->mainPanel->Show(true);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(false);
+	this->highScorePanel->show(false);
+	this->epilogPanel->Show(false);
+	this->instructionPanel->Show(false);
+}
 
+void MultiFrame::ShowInstructionPanel()
+{
+	this->mainPanel->Show(false);
+	this->gamePanel->Show(false);
+	this->pausePanel->Show(false);
+	this->highScorePanel->show(false);
+	this->epilogPanel->Show(false);
+	this->instructionPanel->Show(true);
+}
+
+void MultiFrame::ShowPausePanel()
+{
+	this->mainPanel->Show(false);
+	this->gamePanel->Show(false);
+	this->pausePanel->Show(true);
+	this->highScorePanel->show(false);
+	this->epilogPanel->Show(false);
+	this->instructionPanel->Show(false);
+}
+
+void MultiFrame::ShowHighScorePanel()
+{
+	this->mainPanel->Show(false);
+	this->gamePanel->Show(false);
+	this->pausePanel->Show(false);
+	this->highScorePanel->show(true);
+	this->epilogPanel->Show(false);
+	this->instructionPanel->Show(false);
+}
+
+void MultiFrame::ShowEpilogPanel()
+{
+	this->mainPanel->Show(false);
+	this->gamePanel->Show(false);
+	this->pausePanel->Show(false);
+	this->highScorePanel->show(false);
+	this->epilogPanel->Show(true);
+	this->instructionPanel->Show(false);
 }
 
 MultiFrame::~MultiFrame()
@@ -54,6 +101,7 @@ MultiFrame::~MultiFrame()
 	delete gamePanel;
 	delete pausePanel;
 	delete highScorePanel;
+	delete instructionPanel;
 	delete epilogPanel;
 }
 
