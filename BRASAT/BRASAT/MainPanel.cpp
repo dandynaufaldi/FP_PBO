@@ -26,7 +26,7 @@ MainPanel::MainPanel(MultiFrame * parent) : wxPanel(parent, wxID_ANY), parentFra
 	wbuttonInstruction->SetBitmapCurrent(*hoverbuttonInstruction);
 	wbuttonScore->SetBitmapCurrent(*hoverbuttonScore);
 	wbuttonCredit->SetBitmapCurrent(*hoverbuttonCredit);
-	timer->Start(40);
+	timer->Start(60);
 }
 
 MainPanel::~MainPanel()

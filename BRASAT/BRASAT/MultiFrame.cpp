@@ -53,6 +53,8 @@ void MultiFrame::ShowMainPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
+
+	fitWindowSize();
 }
 
 void MultiFrame::ShowInstructionPanel()
@@ -63,6 +65,8 @@ void MultiFrame::ShowInstructionPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(true);
+
+	fitWindowSize();
 }
 
 void MultiFrame::ShowPausePanel()
@@ -73,6 +77,8 @@ void MultiFrame::ShowPausePanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
+
+	fitWindowSize();
 }
 
 void MultiFrame::ShowHighScorePanel()
@@ -83,6 +89,8 @@ void MultiFrame::ShowHighScorePanel()
 	this->highScorePanel->Show(true);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
+
+	fitWindowSize();
 }
 
 void MultiFrame::ShowEpilogPanel()
@@ -93,6 +101,8 @@ void MultiFrame::ShowEpilogPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(true);
 	this->instructionPanel->Show(false);
+
+	fitWindowSize();
 }
 
 MultiFrame::~MultiFrame()
