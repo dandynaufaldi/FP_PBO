@@ -36,6 +36,7 @@
     <ClCompile Include="GamePanel.cpp" />
     <ClCompile Include="HighScorePanel.cpp" />
     <ClCompile Include="InstructionPanel.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainPanel.cpp" />
     <ClCompile Include="Man.cpp" />
     <ClCompile Include="MultiFrame.cpp" />

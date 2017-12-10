@@ -1,11 +1,8 @@
 #include "EpilogPanel.h"
 
-
-
-EpilogPanel::EpilogPanel()
+EpilogPanel::EpilogPanel(MultiFrame * parent) : wxPanel(parent, wxID_ANY), parentFrame(parent)
 {
 }
-
 
 EpilogPanel::~EpilogPanel()
 {

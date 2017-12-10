@@ -1,8 +1,12 @@
 #pragma once
-class GamePanel
+#include "wx\wx.h"
+#include "MultiFrame.h"
+class GamePanel : public wxPanel
 {
 public:
-	GamePanel();
+	GamePanel(MultiFrame* parent);
 	~GamePanel();
+private:
+	MultiFrame *parentFrame;
 };
 

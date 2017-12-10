@@ -1,8 +1,12 @@
 #pragma once
-class EpilogPanel
+#include "wx\wx.h"
+#include "MultiFrame.h"
+class EpilogPanel : public wxPanel
 {
 public:
-	EpilogPanel();
+	EpilogPanel(MultiFrame* parent);
 	~EpilogPanel();
+private:
+	MultiFrame *parentFrame;
 };
 

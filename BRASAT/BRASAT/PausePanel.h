@@ -1,8 +1,12 @@
 #pragma once
-class PausePanel
+#include "wx\wx.h"
+#include "MultiFrame.h"
+class PausePanel : public wxPanel
 {
 public:
-	PausePanel();
+	PausePanel(MultiFrame* parent);
 	~PausePanel();
+private:
+	MultiFrame *parentFrame;
 };
 

@@ -50,7 +50,7 @@ void MultiFrame::ShowMainPanel()
 	this->mainPanel->Show(true);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(false);
-	this->highScorePanel->show(false);
+	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
 }
@@ -60,7 +60,7 @@ void MultiFrame::ShowInstructionPanel()
 	this->mainPanel->Show(false);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(false);
-	this->highScorePanel->show(false);
+	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(true);
 }
@@ -70,7 +70,7 @@ void MultiFrame::ShowPausePanel()
 	this->mainPanel->Show(false);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(true);
-	this->highScorePanel->show(false);
+	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
 }
@@ -80,7 +80,7 @@ void MultiFrame::ShowHighScorePanel()
 	this->mainPanel->Show(false);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(false);
-	this->highScorePanel->show(true);
+	this->highScorePanel->Show(true);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
 }
@@ -90,7 +90,7 @@ void MultiFrame::ShowEpilogPanel()
 	this->mainPanel->Show(false);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(false);
-	this->highScorePanel->show(false);
+	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(true);
 	this->instructionPanel->Show(false);
 }

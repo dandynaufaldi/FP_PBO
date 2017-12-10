@@ -1,0 +1,5 @@
+﻿  MainPanel.cpp
+d:\documents\visual studio 2015\projects\brasat\brasat\mainpanel.cpp(50): warning C4100: 'event': unreferenced formal parameter
+d:\documents\visual studio 2015\projects\brasat\brasat\mainpanel.cpp(72): warning C4100: 'event': unreferenced formal parameter
+  BRASAT.vcxproj -> D:\Documents\Visual Studio 2015\Projects\BRASAT\Debug\BRASAT.exe
+  BRASAT.vcxproj -> D:\Documents\Visual Studio 2015\Projects\BRASAT\Debug\BRASAT.pdb (Full PDB)

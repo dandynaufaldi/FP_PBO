@@ -22,6 +22,7 @@ public:
 	int getWidth();
 	void setHeight(int height);
 	int getHeight();
+	void setFilePath(std::string filePath);
 	virtual void loadBitmap();
 	virtual void Draw(wxBufferedPaintDC &dc)=0;
 	bool isCollide(GameObject *opponent);

@@ -1,8 +1,12 @@
 #pragma once
-class HighScorePanel
+#include "wx\wx.h"
+#include "MultiFrame.h"
+class HighScorePanel : public wxPanel
 {
 public:
-	HighScorePanel();
+	HighScorePanel(MultiFrame* parent);
 	~HighScorePanel();
+private:
+	MultiFrame *parentFrame;
 };
 
