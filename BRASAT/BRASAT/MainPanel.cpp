@@ -32,6 +32,9 @@ MainPanel::MainPanel(MultiFrame * parent) : wxPanel(parent, wxID_ANY), parentFra
 MainPanel::~MainPanel()
 {
 	timer->Stop();
+	delete tempBitmap;
+	delete spriteBitmap;
+	delete timer;
 	delete logo;
 	delete buttonStart;
 	delete buttonInstruction;
