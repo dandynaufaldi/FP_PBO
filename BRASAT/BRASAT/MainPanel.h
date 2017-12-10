@@ -1,8 +1,12 @@
 #pragma once
-class MainPanel
+#include "wx\wx.h"
+#include "MultiFrame.h"
+class MainPanel : public wxPanel
 {
 public:
-	MainPanel();
+	MainPanel(MultiFrame* parent);
 	~MainPanel();
+
+
 };
 
