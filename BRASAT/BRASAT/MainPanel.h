@@ -11,6 +11,11 @@ public:
 	~MainPanel();
 	void OnPaint(wxPaintEvent &event);
 	void OnTimer(wxTimerEvent &event);
+	void OnButtonStartClick(wxCommandEvent& event);
+	void OnButtonInstructionClick(wxCommandEvent& event);
+	void OnButtonCreditClick(wxCommandEvent& event);
+
+
 private:
 	MultiFrame *parentFrame;
 	Man *mainMan;

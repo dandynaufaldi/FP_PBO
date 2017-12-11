@@ -5,6 +5,7 @@
 #include "GamePanel.h"
 #include "HighScorePanel.h"
 #include "EpilogPanel.h"
+#include "CreditPanel.h"
 
 
 MultiFrame::MultiFrame(const wxString & title) : wxFrame(NULL, wxID_ANY, title)
@@ -40,6 +41,10 @@ void MultiFrame::InitComponents()
 	this->epilogPanel->Show(false);
 	this->boxSizer->Add(epilogPanel, 1, wxEXPAND, 0);
 
+	this->creditPanel = new CreditPanel(this);
+	this->creditPanel->Show(false);
+	this->boxSizer->Add(creditPanel, 1, wxEXPAND, 0);
+
 	SetSizer(boxSizer);
 
 	ShowMainPanel();
@@ -53,6 +58,20 @@ void MultiFrame::ShowMainPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
+	this->creditPanel->Show(false);
+
+	fitWindowSize();
+}
+
+void MultiFrame::ShowGamePanel()
+{
+	this->mainPanel->Show(false);
+	this->gamePanel->Show(true);
+	this->pausePanel->Show(false);
+	this->highScorePanel->Show(false);
+	this->epilogPanel->Show(false);
+	this->instructionPanel->Show(false);
+	this->creditPanel->Show(false);
 
 	fitWindowSize();
 }
@@ -65,6 +84,7 @@ void MultiFrame::ShowInstructionPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(true);
+	this->creditPanel->Show(false);
 
 	fitWindowSize();
 }
@@ -77,6 +97,7 @@ void MultiFrame::ShowPausePanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
+	this->creditPanel->Show(false);
 
 	fitWindowSize();
 }
@@ -89,6 +110,7 @@ void MultiFrame::ShowHighScorePanel()
 	this->highScorePanel->Show(true);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
+	this->creditPanel->Show(false);
 
 	fitWindowSize();
 }
@@ -101,6 +123,20 @@ void MultiFrame::ShowEpilogPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(true);
 	this->instructionPanel->Show(false);
+	this->creditPanel->Show(false);
+
+	fitWindowSize();
+}
+
+void MultiFrame::ShowCreditPanel()
+{
+	this->mainPanel->Show(false);
+	this->gamePanel->Show(false);
+	this->pausePanel->Show(false);
+	this->highScorePanel->Show(false);
+	this->epilogPanel->Show(false);
+	this->instructionPanel->Show(false);
+	this->creditPanel->Show(true);
 
 	fitWindowSize();
 }
@@ -113,6 +149,7 @@ MultiFrame::~MultiFrame()
 	delete highScorePanel;
 	delete instructionPanel;
 	delete epilogPanel;
+	delete creditPanel;
 }
 
 void MultiFrame::fitWindowSize()
