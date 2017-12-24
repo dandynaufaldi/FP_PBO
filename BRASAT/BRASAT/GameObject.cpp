@@ -1,5 +1,6 @@
 #include "GameObject.h"
 #include <wx/stdpaths.h>
+<<<<<<< Updated upstream
 #include <wx/filename.h>
 
 
@@ -37,6 +38,49 @@ int GameObject::getPosY()
 void GameObject::setWidth(int width)
 {
 	this->width = width;
+=======
+#include <wx/filename.h>
+
+
+GameObject::GameObject()
+{
+}
+
+
+GameObject::~GameObject()
+{
+	delete gameObject;
+}
+
+void GameObject::setPosX(int posX)
+{
+	this->posX = posX;
+<<<<<<< HEAD
+
+=======
+	
+>>>>>>> master
+}
+
+int GameObject::getPosX()
+{
+	return this->posX;
+}
+
+void GameObject::setPosxY(int posY)
+{
+	this->posY = posY;
+}
+
+int GameObject::getPosY()
+{
+	return this->posY;
+}
+
+void GameObject::setWidth(int width)
+{
+	this->width = width;
+>>>>>>> Stashed changes
 }
 
 int GameObject::getWidth()

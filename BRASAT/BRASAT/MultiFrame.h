@@ -18,7 +18,16 @@ private:
 	PausePanel* pausePanel;
 	HighScorePanel* highScorePanel;
 	EpilogPanel* epilogPanel;
+<<<<<<< Updated upstream
 
+=======
+	CreditPanel* creditPanel;
+<<<<<<< HEAD
+	int ResSume=0;
+=======
+
+>>>>>>> master
+>>>>>>> Stashed changes
 	void fitWindowSize();
 public:
 	MultiFrame(const wxString &title);

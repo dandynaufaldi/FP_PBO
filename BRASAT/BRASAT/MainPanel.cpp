@@ -7,6 +7,16 @@
 BEGIN_EVENT_TABLE(MainPanel , wxPanel)
 EVT_PAINT(MainPanel::OnPaint)
 EVT_TIMER(TIMER_ID, MainPanel::OnTimer)
+<<<<<<< Updated upstream
+=======
+EVT_BUTTON(1001, MainPanel::OnButtonStartClick)
+EVT_BUTTON(1002, MainPanel::OnButtonInstructionClick)
+<<<<<<< HEAD
+EVT_BUTTON(1003, MainPanel::OnButtonScoreClick)
+=======
+>>>>>>> master
+EVT_BUTTON(1004, MainPanel::OnButtonCreditClick)
+>>>>>>> Stashed changes
 END_EVENT_TABLE()
 
 MainPanel::MainPanel(MultiFrame * parent) : wxPanel(parent, wxID_ANY), parentFrame(parent)
@@ -130,3 +140,33 @@ void MainPanel::LoadAssetBitmap()
 	wxImage hovercreditimage(fileLocation, wxBITMAP_TYPE_PNG);
 	hoverbuttonCredit = new wxBitmap(hovercreditimage);
 }
+<<<<<<< Updated upstream
+=======
+
+void MainPanel::OnButtonStartClick(wxCommandEvent& event)
+{
+<<<<<<< HEAD
+	PlaySound(TEXT("ingame.wav"), NULL, SND_FILENAME | SND_ASYNC);
+=======
+>>>>>>> master
+	parentFrame->ShowGamePanel();
+}
+
+void MainPanel::OnButtonInstructionClick(wxCommandEvent& event)
+{
+	parentFrame->ShowInstructionPanel();
+}
+
+void MainPanel::OnButtonCreditClick(wxCommandEvent& event)
+{
+	parentFrame->ShowCreditPanel();
+<<<<<<< HEAD
+}
+
+void MainPanel::OnButtonScoreClick(wxCommandEvent& event)
+{
+	parentFrame->ShowHighScorePanel();
+=======
+>>>>>>> master
+}
+>>>>>>> Stashed changes

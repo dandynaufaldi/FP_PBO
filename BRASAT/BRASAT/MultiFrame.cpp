@@ -5,6 +5,15 @@
 #include "GamePanel.h"
 #include "HighScorePanel.h"
 #include "EpilogPanel.h"
+<<<<<<< Updated upstream
+=======
+#include "CreditPanel.h"
+<<<<<<< HEAD
+#include <windows.h>
+#include <mmsystem.h>
+=======
+>>>>>>> master
+>>>>>>> Stashed changes
 
 
 MultiFrame::MultiFrame(const wxString & title) : wxFrame(NULL, wxID_ANY, title)
@@ -53,6 +62,28 @@ void MultiFrame::ShowMainPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
+<<<<<<< Updated upstream
+=======
+	this->creditPanel->Show(false);
+<<<<<<< HEAD
+	fitWindowSize();
+}
+=======
+
+	fitWindowSize();
+}
+
+void MultiFrame::ShowGamePanel()
+{
+	this->mainPanel->Show(false);
+	this->gamePanel->Show(true);
+	this->pausePanel->Show(false);
+	this->highScorePanel->Show(false);
+	this->epilogPanel->Show(false);
+	this->instructionPanel->Show(false);
+	this->creditPanel->Show(false);
+>>>>>>> master
+>>>>>>> Stashed changes
 
 	fitWindowSize();
 }
@@ -113,6 +144,23 @@ MultiFrame::~MultiFrame()
 	delete highScorePanel;
 	delete instructionPanel;
 	delete epilogPanel;
+<<<<<<< Updated upstream
+=======
+	delete creditPanel;
+<<<<<<< HEAD
+}
+
+int MultiFrame::getResSum()
+{
+	return this->ResSume;
+}
+
+void MultiFrame::setResSum(int flag)
+{
+	this->ResSume = flag;
+=======
+>>>>>>> master
+>>>>>>> Stashed changes
 }
 
 void MultiFrame::fitWindowSize()

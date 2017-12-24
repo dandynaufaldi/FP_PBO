@@ -11,6 +11,18 @@ public:
 	~MainPanel();
 	void OnPaint(wxPaintEvent &event);
 	void OnTimer(wxTimerEvent &event);
+<<<<<<< Updated upstream
+=======
+	void OnButtonStartClick(wxCommandEvent& event);
+	void OnButtonInstructionClick(wxCommandEvent& event);
+	void OnButtonCreditClick(wxCommandEvent& event);
+<<<<<<< HEAD
+	void OnButtonScoreClick(wxCommandEvent& event);
+=======
+>>>>>>> master
+
+
+>>>>>>> Stashed changes
 private:
 	MultiFrame *parentFrame;
 	Man *mainMan;
