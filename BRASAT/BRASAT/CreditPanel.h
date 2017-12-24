@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma once
 #include "wx\wx.h"
 #include "wx\dcbuffer.h"
@@ -20,6 +21,8 @@ private:
 };
 
 =======
+=======
+>>>>>>> master
 #pragma once
 #include "wx\wx.h"
 #include "wx\dcbuffer.h"
@@ -40,4 +43,7 @@ private:
 	DECLARE_EVENT_TABLE()
 };
 
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master

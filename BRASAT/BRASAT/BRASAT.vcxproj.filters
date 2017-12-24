@@ -45,6 +45,7 @@
     <ClInclude Include="GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     <ClInclude Include="CreditPanel.h">
@@ -72,6 +73,11 @@
 =======
 >>>>>>> master
 >>>>>>> Stashed changes
+=======
+    <ClInclude Include="CreditPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+>>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainPanel.cpp">
@@ -107,6 +113,7 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     <ClCompile Include="CreditPanel.cpp">
@@ -134,5 +141,10 @@
 =======
 >>>>>>> master
 >>>>>>> Stashed changes
+=======
+    <ClCompile Include="CreditPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+>>>>>>> master
   </ItemGroup>
 </Project>

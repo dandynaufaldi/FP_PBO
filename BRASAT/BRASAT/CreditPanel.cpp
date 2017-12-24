@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "CreditPanel.h"
 #include <wx/stdpaths.h>
 #include <wx/filename.h>
@@ -37,6 +38,8 @@ void CreditPanel::OnCreditPictureClick(wxCommandEvent& event)
 	parentFrame->ShowMainPanel();
 }
 =======
+=======
+>>>>>>> master
 #include "CreditPanel.h"
 #include <wx/stdpaths.h>
 #include <wx/filename.h>
@@ -74,4 +77,7 @@ void CreditPanel::OnCreditPictureClick(wxCommandEvent& event)
 {
 	parentFrame->ShowMainPanel();
 }
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
