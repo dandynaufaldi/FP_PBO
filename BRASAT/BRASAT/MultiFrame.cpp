@@ -5,19 +5,9 @@
 #include "GamePanel.h"
 #include "HighScorePanel.h"
 #include "EpilogPanel.h"
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 #include "CreditPanel.h"
-<<<<<<< HEAD
 #include <windows.h>
 #include <mmsystem.h>
-=======
->>>>>>> master
->>>>>>> Stashed changes
-=======
-#include "CreditPanel.h"
->>>>>>> master
 
 
 MultiFrame::MultiFrame(const wxString & title) : wxFrame(NULL, wxID_ANY, title)
@@ -70,23 +60,20 @@ void MultiFrame::ShowMainPanel()
 	this->highScorePanel->Show(false);
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 	this->creditPanel->Show(false);
-<<<<<<< HEAD
-	fitWindowSize();
-}
-=======
-=======
-	this->creditPanel->Show(false);
->>>>>>> master
-
 	fitWindowSize();
 }
 
 void MultiFrame::ShowGamePanel()
 {
+	if (this->mainPanel->IsShown() || this->ResSume == 2) {
+		wxMessageOutputDebug().Printf("Reset Game");
+		delete gamePanel;
+		this->gamePanel = new GamePanel(this);
+		this->gamePanel->Show(false);
+		this->boxSizer->Add(gamePanel, 1, wxEXPAND, 0);
+		//this->gamePanel->ResetGame();
+	}
 	this->mainPanel->Show(false);
 	this->gamePanel->Show(true);
 	this->pausePanel->Show(false);
@@ -94,12 +81,8 @@ void MultiFrame::ShowGamePanel()
 	this->epilogPanel->Show(false);
 	this->instructionPanel->Show(false);
 	this->creditPanel->Show(false);
-<<<<<<< HEAD
->>>>>>> master
->>>>>>> Stashed changes
-=======
->>>>>>> master
-
+	this->gamePanel->SetFocus();
+	this->gamePanel->StartGame();
 	fitWindowSize();
 }
 
@@ -118,6 +101,7 @@ void MultiFrame::ShowInstructionPanel()
 
 void MultiFrame::ShowPausePanel()
 {
+	this->gamePanel->StopGame();
 	this->mainPanel->Show(false);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(true);
@@ -144,6 +128,7 @@ void MultiFrame::ShowHighScorePanel()
 
 void MultiFrame::ShowEpilogPanel()
 {
+	PlaySound(TEXT("gameover.wav"), NULL, SND_FILENAME | SND_ASYNC);
 	this->mainPanel->Show(false);
 	this->gamePanel->Show(false);
 	this->pausePanel->Show(false);
@@ -176,11 +161,7 @@ MultiFrame::~MultiFrame()
 	delete highScorePanel;
 	delete instructionPanel;
 	delete epilogPanel;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 	delete creditPanel;
-<<<<<<< HEAD
 }
 
 int MultiFrame::getResSum()
@@ -191,12 +172,6 @@ int MultiFrame::getResSum()
 void MultiFrame::setResSum(int flag)
 {
 	this->ResSume = flag;
-=======
->>>>>>> master
->>>>>>> Stashed changes
-=======
-	delete creditPanel;
->>>>>>> master
 }
 
 void MultiFrame::fitWindowSize()

@@ -45,13 +45,9 @@
     <ClInclude Include="GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
     <ClInclude Include="CreditPanel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
     <ClInclude Include="HeartBroke.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -70,14 +66,6 @@
     <ClInclude Include="MovingTownBack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-=======
->>>>>>> master
->>>>>>> Stashed changes
-=======
-    <ClInclude Include="CreditPanel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
->>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainPanel.cpp">
@@ -113,13 +101,9 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
     <ClCompile Include="CreditPanel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="HeartBroke.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -138,13 +122,5 @@
     <ClCompile Include="MovingTownBack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-=======
->>>>>>> master
->>>>>>> Stashed changes
-=======
-    <ClCompile Include="CreditPanel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
->>>>>>> master
   </ItemGroup>
 </Project>

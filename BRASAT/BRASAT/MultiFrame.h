@@ -19,20 +19,8 @@ private:
 	PausePanel* pausePanel;
 	HighScorePanel* highScorePanel;
 	EpilogPanel* epilogPanel;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 	CreditPanel* creditPanel;
->>>>>>> master
-
-=======
-	CreditPanel* creditPanel;
-<<<<<<< HEAD
 	int ResSume=0;
-=======
-
->>>>>>> master
->>>>>>> Stashed changes
 	void fitWindowSize();
 public:
 	MultiFrame(const wxString &title);
@@ -45,5 +33,7 @@ public:
 	void ShowEpilogPanel();
 	void ShowCreditPanel();
 	~MultiFrame();
+	int getResSum();
+	void setResSum(int flag);
 };
 

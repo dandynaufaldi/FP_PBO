@@ -1,0 +1,11 @@
+﻿  GamePanel.cpp
+d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(99): warning C4100: 'event': unreferenced formal parameter
+d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(152): warning C4100: 'event': unreferenced formal parameter
+d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(160): warning C4100: 'event': unreferenced formal parameter
+d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(202): warning C4100: 'WXUNUSED': unreferenced formal parameter
+d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(228): warning C4456: declaration of 'stdPaths' hides previous local declaration
+  d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(212): note: see declaration of 'stdPaths'
+d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(229): warning C4456: declaration of 'fileLocation' hides previous local declaration
+  d:\documents\kuliah\semester 3\pbo\fp\fp_pbo\brasat\brasat\gamepanel.cpp(213): note: see declaration of 'fileLocation'
+  BRASAT.vcxproj -> D:\Documents\Kuliah\Semester 3\PBO\FP\FP_PBO\BRASAT\Debug\BRASAT.exe
+  BRASAT.vcxproj -> D:\Documents\Kuliah\Semester 3\PBO\FP\FP_PBO\BRASAT\Debug\BRASAT.pdb (Full PDB)
