@@ -11,6 +11,12 @@ public:
 	~MainPanel();
 	void OnPaint(wxPaintEvent &event);
 	void OnTimer(wxTimerEvent &event);
+	void OnButtonStartClick(wxCommandEvent& event);
+	void OnButtonInstructionClick(wxCommandEvent& event);
+	void OnButtonCreditClick(wxCommandEvent& event);
+	void OnButtonScoreClick(wxCommandEvent& event);
+
+
 private:
 	MultiFrame *parentFrame;
 	Man *mainMan;
@@ -26,6 +32,7 @@ private:
 
 	wxBitmap *tempBitmap = nullptr;
 	wxBitmap *spriteBitmap = nullptr;
+
 	wxTimer *timer;
 
 	void LoadAssetBitmap();

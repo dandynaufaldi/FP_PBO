@@ -10,6 +10,7 @@ private:
 	int width;
 	int height;
 	std::string filePath;
+protected:
 	wxBitmap *gameObject = nullptr;
 public:
 	GameObject();
@@ -24,7 +25,7 @@ public:
 	int getHeight();
 	void setFilePath(std::string filePath);
 	virtual void loadBitmap();
-	virtual void Draw(wxBufferedPaintDC &dc)=0;
+	wxBitmap* getBitmap();
+	virtual void Move(int dif) = 0;
 	bool isCollide(GameObject *opponent);
 };
-
