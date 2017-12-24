@@ -15,7 +15,7 @@ IMPLEMENT_APP(MyApp)
 DECLARE_APP(MyApp)
 
 bool MyApp::OnInit() {
-	MultiFrame *frame = new MultiFrame("BRASAT");
+	MultiFrame *frame = new MultiFrame("Window Switcher");
 	frame->Show(true);
 	return true;
 }
